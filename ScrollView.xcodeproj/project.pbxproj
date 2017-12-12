@@ -14,6 +14,11 @@
 		BF99D30C1FDF3F2D002B4D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF99D30B1FDF3F2D002B4D85 /* Assets.xcassets */; };
 		BF99D30F1FDF3F2D002B4D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF99D30D1FDF3F2D002B4D85 /* LaunchScreen.storyboard */; };
 		BF99D3121FDF3F2D002B4D85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D3111FDF3F2D002B4D85 /* main.m */; };
+		BF99D3261FDF42CA002B4D85 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D3251FDF42CA002B4D85 /* UIView+Frame.m */; };
+		BF99D3291FDF46F0002B4D85 /* PageTitleViewConfigura.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D3281FDF46F0002B4D85 /* PageTitleViewConfigura.m */; };
+		BF99D32C1FDF46FC002B4D85 /* PageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D32B1FDF46FC002B4D85 /* PageTitleView.m */; };
+		BF99D32F1FDF5CDD002B4D85 /* PageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D32E1FDF5CDD002B4D85 /* PageContentView.m */; };
+		BF99D3321FDF5CE9002B4D85 /* PageContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF99D3311FDF5CE9002B4D85 /* PageContentScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,16 @@
 		BF99D30E1FDF3F2D002B4D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF99D3101FDF3F2D002B4D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF99D3111FDF3F2D002B4D85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF99D3241FDF42CA002B4D85 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		BF99D3251FDF42CA002B4D85 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		BF99D3271FDF46F0002B4D85 /* PageTitleViewConfigura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageTitleViewConfigura.h; sourceTree = "<group>"; };
+		BF99D3281FDF46F0002B4D85 /* PageTitleViewConfigura.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageTitleViewConfigura.m; sourceTree = "<group>"; };
+		BF99D32A1FDF46FC002B4D85 /* PageTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageTitleView.h; sourceTree = "<group>"; };
+		BF99D32B1FDF46FC002B4D85 /* PageTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageTitleView.m; sourceTree = "<group>"; };
+		BF99D32D1FDF5CDD002B4D85 /* PageContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageContentView.h; sourceTree = "<group>"; };
+		BF99D32E1FDF5CDD002B4D85 /* PageContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageContentView.m; sourceTree = "<group>"; };
+		BF99D3301FDF5CE9002B4D85 /* PageContentScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageContentScrollView.h; sourceTree = "<group>"; };
+		BF99D3311FDF5CE9002B4D85 /* PageContentScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageContentScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,8 @@
 		BF99D3011FDF3F2D002B4D85 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				BF99D3181FDF4227002B4D85 /* Classes */,
+				BF99D31F1FDF4227002B4D85 /* Library */,
 				BF99D3021FDF3F2D002B4D85 /* AppDelegate.h */,
 				BF99D3031FDF3F2D002B4D85 /* AppDelegate.m */,
 				BF99D3051FDF3F2D002B4D85 /* ViewController.h */,
@@ -93,6 +110,102 @@
 				BF99D3111FDF3F2D002B4D85 /* main.m */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		BF99D3181FDF4227002B4D85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D3191FDF4227002B4D85 /* CustomView */,
+				BF99D31A1FDF4227002B4D85 /* Exmaple */,
+				BF99D31E1FDF4227002B4D85 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF99D3191FDF4227002B4D85 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D3201FDF426E002B4D85 /* Category */,
+				BF99D3211FDF426E002B4D85 /* PageContent */,
+				BF99D3221FDF426E002B4D85 /* PageTitle */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		BF99D31A1FDF4227002B4D85 /* Exmaple */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D31B1FDF4227002B4D85 /* Controller */,
+				BF99D31C1FDF4227002B4D85 /* Model */,
+				BF99D31D1FDF4227002B4D85 /* View */,
+			);
+			path = Exmaple;
+			sourceTree = "<group>";
+		};
+		BF99D31B1FDF4227002B4D85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF99D31C1FDF4227002B4D85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF99D31D1FDF4227002B4D85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF99D31E1FDF4227002B4D85 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BF99D31F1FDF4227002B4D85 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BF99D3201FDF426E002B4D85 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D3241FDF42CA002B4D85 /* UIView+Frame.h */,
+				BF99D3251FDF42CA002B4D85 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BF99D3211FDF426E002B4D85 /* PageContent */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D32D1FDF5CDD002B4D85 /* PageContentView.h */,
+				BF99D32E1FDF5CDD002B4D85 /* PageContentView.m */,
+				BF99D3301FDF5CE9002B4D85 /* PageContentScrollView.h */,
+				BF99D3311FDF5CE9002B4D85 /* PageContentScrollView.m */,
+			);
+			path = PageContent;
+			sourceTree = "<group>";
+		};
+		BF99D3221FDF426E002B4D85 /* PageTitle */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D3271FDF46F0002B4D85 /* PageTitleViewConfigura.h */,
+				BF99D3281FDF46F0002B4D85 /* PageTitleViewConfigura.m */,
+				BF99D32A1FDF46FC002B4D85 /* PageTitleView.h */,
+				BF99D32B1FDF46FC002B4D85 /* PageTitleView.m */,
+			);
+			path = PageTitle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99D32F1FDF5CDD002B4D85 /* PageContentView.m in Sources */,
+				BF99D3261FDF42CA002B4D85 /* UIView+Frame.m in Sources */,
 				BF99D3071FDF3F2D002B4D85 /* ViewController.m in Sources */,
 				BF99D3121FDF3F2D002B4D85 /* main.m in Sources */,
+				BF99D3321FDF5CE9002B4D85 /* PageContentScrollView.m in Sources */,
 				BF99D3041FDF3F2D002B4D85 /* AppDelegate.m in Sources */,
+				BF99D32C1FDF46FC002B4D85 /* PageTitleView.m in Sources */,
+				BF99D3291FDF46F0002B4D85 /* PageTitleViewConfigura.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
